@@ -1,0 +1,18 @@
+app:
+  name: 
+  
+server: 
+  port: 
+
+db:
+  host: 
+  port: 
+  user: 
+  password: 
+  dbname: 
+  sslmode: 
+  timezone: 
+
+migration:
+  dir: 
+  driver: 
