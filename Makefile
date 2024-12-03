@@ -7,13 +7,17 @@ init:
 	go mod init $${Name}
 	@ rm -rf .git/
 	@$(MAKE) dep
-	@ go run ./helper/env/env.go
+	@$(MAKE) env
 	git init
 
-# installing dependencies
+# install dependencies
 dep:
 	@go get -u github.com/jackc/pgx/v5
 	@go get -u github.com/spf13/viper
+
+# generate .env
+env:
+	@ go run ./helper/env/env.go
 
 # create migration
 migrate:

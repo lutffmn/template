@@ -12,11 +12,9 @@ This template meant to be my personal use. However, you can use it if you desire
 
 - Set up your apps configuration in ``config.yaml`` file
 
-
-
 ## Initialize Project
 
-In the root directory, run:
+In the project's root directory, run:
 
 ```shell
 make init
@@ -24,21 +22,35 @@ make init
 
 Then, input your project name.
 
-**Note: This action will also installing some dependencies.**
+**Note:**
+
+- **This action will install some dependencies**
+
+- **This action will also configure ``.env`` file's content**
+
+
+
+## Environment Variables
+
+In the project's root directory, run:
+
+```shell
+make env
+```
+
+This action will update the values of your ``.env`` based on your changes in ``config.yaml`` file.
 
 
 
 ## Build
 
-In the root directory, run:
+In the project's root directory, run:
 
 ```shell
 make build
 ```
 
 This action will build the program, and put the compiled binary in ``bin/`` directory.
-
-
 
 ## Run
 
@@ -50,7 +62,7 @@ There's 2 options to run the project:
 
 ### Run the Compiled Binary
 
-In the root directory, run:
+In the project's root directory, run:
 
 ```shell
 make run
@@ -58,13 +70,11 @@ make run
 
 ### Run the Program
 
-In the root directory, run:
+In the project's root directory, run:
 
 ```shell
 make dev
 ```
-
-
 
 ## Catch a bug?
 
