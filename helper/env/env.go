@@ -85,5 +85,13 @@ func main() {
 		configInstance.DB.TimeZone,
 	)
 
-	fmt.Println(".env file created successfully!")
+	fmt.Println("Generated .env")
+
+	file, err = os.Create(".gitignore")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Fprint(file, ".env")
+
+	fmt.Println("Generated .gitignore")
 }
