@@ -14,6 +14,7 @@ init:
 dep:
 	@go get -u github.com/jackc/pgx/v5
 	@go get -u github.com/spf13/viper
+	@go get -u github.com/lutffmn/flow
 
 # generate .env
 env:
